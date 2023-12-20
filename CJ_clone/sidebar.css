@@ -1,0 +1,38 @@
+.sidebar_list {
+    width: 70%; /* 변경: 사이드바의 너비를 50px로 설정 */
+    height: 50px; /* 변경: 화면 높이에 따라 사이드바의 높이를 조절 */
+    background-color: transparent; /* 메뉴 바 배경색 */
+    transform-origin: top left; /* 회전할 때 기준점을 왼쪽 상단으로 설정 */
+    transform: rotate(-90deg);
+    position: fixed;
+    left: 0;
+    bottom: 0; /* 추가: 세로로 나열 */
+    border-bottom: 1px solid rgb(149, 149, 149);
+  }
+  
+  .sidebar_list ul {
+    width: 100%; /* 변경: ul 너비 100%로 설정 */
+    height: 60px; /* 변경: ul 높이 100%로 설정 */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style-type: none;
+  }
+  
+  .sidebar_list ul li {
+    width: 110px;
+    padding-right: 0; /* 변경: 각 항목의 오른쪽 패딩 제거 */
+    padding: 20px ; /* 변경: 각 항목의 패딩을 위아래 10px, 좌우 20px로 설정 */
+  }
+  .sidebar_list ul li:nth-child(3){
+    width: 150px;
+  }
+  
+  .sidebar_list ul li a {
+    text-decoration: none;
+    color: rgb(149, 149, 149);
+    font-size: 14px;
+    font-weight: 700;
+  }

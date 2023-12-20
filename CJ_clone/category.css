@@ -1,0 +1,75 @@
+.category{
+    max-width: 80%;
+    margin: auto;
+    margin-top: 10rem;
+}
+.category_title{
+    height:8rem;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin-top: 200px;
+}
+.category_title h2{
+    font-size: 4rem;
+    color: rgb(200, 200, 200);
+    font-weight: 900;
+    margin: 0;
+}
+.category_title button{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: ghostwhite;
+}
+.category_title button img{
+    width: 3rem;
+    height: 3rem;
+}
+.category_title button:active{
+    background-color: rgb(231, 231, 231);
+    border-radius: 1.5rem;
+}
+.contents_item{
+}
+.contents{
+    height: 440px;
+    width: 300px;
+    justify-content: space-between;
+    margin-right: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+.contents a img{
+    height: 406px;
+    width: 291px;
+}
+.more{
+    text-align: center;
+    position: relative;
+}
+.more h1{
+    position: absolute;
+    bottom: 42%;
+    left: 37%;
+    z-index:100;
+    color: white;
+    font-size: 30px;
+}
+.more p{
+    position: absolute;
+    bottom: 34%;
+    left: 28%;
+    z-index:100;
+    color: white;
+    font-size: 16px;
+}
+
+@keyframes skew {
+    0%{transform: rotate(0); scale: 1.0;}
+    50%{transform: rotate(-10deg); scale: 1.1;}
+    100%{transform: rotate(0); scale: 1.0;}
+}
+
+.contents:hover{
+    animation: skew 1s linear forwards;
+}
